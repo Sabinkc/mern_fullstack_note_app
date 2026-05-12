@@ -38,6 +38,7 @@ async function register(req, res) {
       },
     });
   } catch (err) {
+    console.log(err);
     res.status(401).json({
       message: "Unable to register user",
     });
